@@ -1,4 +1,5 @@
 import React from "react";
+import './Landing.css'
 
 const Landing = () => {
     return(
@@ -20,3 +21,5 @@ const Landing = () => {
         </main>
     )
 }
+
+export default Landing;
