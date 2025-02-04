@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     padding: 0;
@@ -26,11 +26,37 @@ main h1 , p{
 
 main h1{
     font-size: 80px;
-    /* font-family: "Caprasimo", serif;
-    font-weight: 400;
-    font-style: normal; */
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+}
+
+main p{
+    font-size: 23px;
+    padding: 3% 20% 5% 20%;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+main button{
+    width: 10vw;
+    padding: 1% 1% 1% 1%;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+main button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition-duration: 1000ms;
 }
