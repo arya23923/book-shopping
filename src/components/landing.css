@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    background-image: url("../components/images/library.jpg");
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+    /* filter: brightness(0.5); */
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 , p{
+    color: rgb(255, 255, 255);
+}
+
+main h1{
+    font-size: 80px;
+    /* font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
