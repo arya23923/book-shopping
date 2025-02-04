@@ -52,6 +52,7 @@ main button{
     color: white;
     border: 1px solid white;
     border-radius: 8px;
+    backdrop-filter: blur(10px);
 }
 
 main button:hover{
@@ -59,4 +60,18 @@ main button:hover{
     background-color: white;
     color: black;
     transition-duration: 1000ms;
+}
+
+@media screen and (max-width: 450px){
+    main h1{
+        font-size: 45px;
+    }
+    main p{
+        font-size: 20px;
+    }
+    main button{
+        width: 30vw;
+        padding: 2% 5% 2% 5%;
+        backdrop-filter: blur(45px);
+    }
 }
