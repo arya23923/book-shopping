@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from './images/the lit nook logo.png'
+import Logo from './images/the lit nook logo.png'
 import './Navigation.css'
+import inverted from './images/lit nook logo inverted.png'
 
 const Navigation = () => {
+    const [logo, setLogo] = useState(inverted)
     return(
-        <nav>
+        <nav
+            onMouseEnter={() => (setLogo(Logo))}
+            onMouseLeave={() => (setLogo(inverted))}>
             <a>SHOP</a>
             <a>ABOUT</a>
             <a>CONTACT</a>

@@ -19,10 +19,29 @@ nav {
 nav img{
     width: 8vw;
     height: auto;
+    /* padding-top: 2%; */
+    margin-top: 2vh;
 }
 
 nav:hover{
     color: black;
     background-color: white;
     transition-duration: 1000ms;
+}
+
+nav a:hover{
+    cursor: pointer;
+}
+
+nav a:after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+
+nav a:hover:after{
+    width: 100%;
 }
