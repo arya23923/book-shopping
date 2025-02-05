@@ -16,6 +16,14 @@ import dragontatoo from './images/books/dragontatoo.jpg'
 import angels from './images/books/angels.jpg'
 import lovelybones from './images/books/lovelybones.jpg'
 
+// fantasy
+import harrypotter from './images/books/harrypotter.jpg'
+import hobbit from './images/books/hobbit.jpg'
+import thelion from './images/books/thelion.jpg'
+import northernlights from './images/books/northernlights.jpg'
+import dune from './images/books/dune.jpg'
+import bookthief from './images/books/bookthief.jpg'
+
 const Product = () => {
     const booksArray = [
         {
@@ -97,6 +105,47 @@ const Product = () => {
                     author: "Alice Sebold",
                     image: {lovelybones},
                     cost: "$15"
+                },
+            ]
+        },
+        {
+            category: "Fantasy",
+            books: [
+                {
+                    name: "Harry Potter and the Philosopher's Stone",
+                    author: "JK Rowling",
+                    image: {harrypotter},
+                    cost: "$18"
+                },
+                {
+                    name: "The Hobbit",
+                    author: "JRR Tolkien",
+                    image: {hobbit},
+                    cost: "$18"
+                },
+                {
+                    name: "The Lion, the Witch and the Wardrobe",
+                    author: "CS Lewis",
+                    image: {thelion},
+                    cost: "$15"
+                },
+                {
+                    name: "Northern Lights",
+                    author: "Philip Pullman",
+                    image: {northernlights},
+                    cost: "$12"
+                },
+                {
+                    name: "Dune",
+                    author: "Frank Herbert",
+                    image: {dune},
+                    cost: "$30"
+                },
+                {
+                    name: "The Book Thief",
+                    author: "Markus Zusak",
+                    image: {bookthief},
+                    cost: "$20"
                 },
             ]
         }
