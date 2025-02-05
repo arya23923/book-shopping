@@ -30,6 +30,7 @@ main h1{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
+    padding-top: 5%;
 }
 
 main p{

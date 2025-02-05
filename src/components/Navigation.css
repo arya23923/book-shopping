@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    color: white;
+    font-size: 12px;
+    padding: 0% 5% 0% 5%;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav img{
+    width: 8vw;
+    height: auto;
+}
+
+nav:hover{
+    color: black;
+    background-color: white;
+    transition-duration: 1000ms;
+}
