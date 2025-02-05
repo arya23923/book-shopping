@@ -54,3 +54,18 @@ nav a:after{
 nav a:hover:after{
     width: 100%;
 }
+
+@media screen and (max-width: 450px){
+    nav{
+        font-size: 10px;
+    }
+    nav span img{
+        width: 2vw;
+    }
+    nav span{
+        margin-top: -2vh;
+    }
+    nav img{
+        width: 15vw;
+    }
+}
