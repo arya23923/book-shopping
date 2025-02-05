@@ -19,8 +19,17 @@ nav {
 nav img{
     width: 8vw;
     height: auto;
-    /* padding-top: 2%; */
     margin-top: 2vh;
+}
+
+nav span img{
+    width: 1vw;
+    height: auto;
+    margin-right: 0.5vw;
+}
+
+nav span{
+    margin-top: -2.5vh;
 }
 
 nav:hover{
