@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from './images/the lit nook logo.png'
 
 const Navigation = () => {
     return(
@@ -8,7 +9,11 @@ const Navigation = () => {
             <a>SUBSCRIPTION</a>
             <a>ABOUT</a>
             <a>INSPIRATION </a>
-            <a></a>
+            <a>CONTACT</a>
+            <a><img src={logo} /></a>
+            <a>SEARCH</a>
+            <a>ACCOUNT</a>
+            <a>CART</a>
         </nav>
     )
 }
