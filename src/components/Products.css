@@ -1,0 +1,31 @@
+.product .section .books .book img{
+    width: 15vw;
+    height: auto;
+}
+
+.product p, h2{
+    color: black;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.product .section .books{
+    /* display: grid; */
+    /* grid-template-columns: repeat(20vw, 1fr);
+    gap: 5vw; */
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .section h2{
+    align-self: center;
+}

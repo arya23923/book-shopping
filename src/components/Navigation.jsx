@@ -25,7 +25,7 @@ const Navigation = () => {
                 <a>SEARCH</a>
             </span>
             <a>ACCOUNT</a>
-            <a>CART</a>
+            <a>CART ()</a>
         </nav>
     )
 }
