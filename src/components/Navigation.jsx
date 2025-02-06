@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from './images/the lit nook logo.png'
 import './Navigation.css'
 import inverted from './images/lit nook logo inverted.png'
@@ -36,12 +36,12 @@ const Navigation = () => {
                 setLogo(inverted); setSearch(search_invert)
             }else{setLogo(Logo); setSearch(search_icon)}}}
         >
-            <a>SHOP</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
-            <a><img src={logo} /></a>
+            <Link to = '#'>SHOP</Link>
+            <Link to = '#'>ABOUT</Link>
+            <Link to = '#'>CONTACT</Link>
+            <Link to='#'><img src={logo} alt="logo"/></Link>
             <span>
-                <img src={search} />
+                <img src={search} alt="search"/>
                 <a>SEARCH</a>
             </span>
             <a>ACCOUNT</a>

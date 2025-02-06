@@ -50,6 +50,7 @@
     font-style: normal;
     font-size: 23px;
     padding: 2%;
+    text-align: center;
 }
 
 .product .section .books .book p{
@@ -64,8 +65,14 @@
 .product > .section > .books > .book > p:nth-child(4){
     font-weight: bold;
     font-size: 18px;
+    padding-bottom: 5%;
 }
 
 .product > .section > .books > .book > button{
     padding: 3% 5% 3% 5%;
+    background-color: rgb(102, 25, 25);
+    color: white;
+    border: 1px solid rgb(102, 25, 25);
+    border-radius: 6px;
+    font-size: 15px;
 }

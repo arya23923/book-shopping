@@ -16,6 +16,11 @@
     font-style: normal;
 }
 
+.nav a , .inverted a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .inverted{
     position: fixed;
     display: flex;
