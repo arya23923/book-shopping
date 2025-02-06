@@ -28,8 +28,13 @@ const Navigation = () => {
 
     return(
         <div className={color? 'nav' : 'inverted'}
-            onMouseEnter={() => {setLogo(Logo); setSearch(search_icon)}}
-            onMouseLeave={() => {setLogo(inverted); setSearch(search_invert)}}
+            onMouseEnter={() => {if(color){
+                setLogo(Logo); setSearch(search_icon)}
+                else{ setLogo(Logo); setSearch(search_icon)}
+            }}
+            onMouseLeave={() => {if(color){
+                setLogo(inverted); setSearch(search_invert)
+            }else{setLogo(Logo); setSearch(search_icon)}}}
         >
             <a>SHOP</a>
             <a>ABOUT</a>

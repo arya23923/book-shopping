@@ -49,17 +49,17 @@
     margin-top: -2.5vh;
 }
 
-.nav:hover{
+.nav:hover, .inverted:hover{
     color: black;
     background-color: white;
     transition-duration: 1000ms;
 }
 
-.nav a:hover{
+.nav a:hover, .inverted a:hover{
     cursor: pointer;
 }
 
-.nav a:after{
+.nav a:after, .inverted a:after{
     content: '';
     width: 0px;
     height: 1px;
@@ -75,16 +75,16 @@
 
 
 @media screen and (max-width: 450px){
-    .nav{
+    .nav, .inverted{
         font-size: 10px;
     }
-    .nav span img{
+    .nav span img, .inverted span img{
         width: 2vw;
     }
-    .nav span{
+    .nav span, .inverted span{
         margin-top: -2vh;
     }
-    .nav img{
+    .nav img, .inverted img{
         width: 15vw;
     }
 }
