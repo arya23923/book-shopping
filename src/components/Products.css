@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .product .section .books .book img{
     width: 15vw;
     height: auto;
 }
 
-.product p, h2{
-    color: black;
-}
-
-.product{
+.product, .product p, .product h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    color: black;
 }
 
 
@@ -25,3 +25,43 @@
     align-items: center;
 }
 
+.product > .section > h2{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    padding-top: 5%;
+    justify-self: center;
+    border-bottom: 2px solid rgb(90, 13, 13);
+}
+
+.product .section .books .book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product .section .books .book h3{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 23px;
+    padding: 2%;
+}
+
+.product .section .books .book p{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding: 2%;
+    font-size: 15px;
+}
+
+.product > .section > .books > .book > p:nth-child(2){
+    font-weight: bold;
+    font-size: 20px;
+}

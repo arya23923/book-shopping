@@ -1,6 +1,5 @@
 import React from "react";
 import './Products.css'
-import Navigation from "./Navigation";
 
 // classics
 import ataleoftwocities from './images/books/ataleoftwocities.jpg'
@@ -154,7 +153,6 @@ const Product = () => {
     ]
     return(
         <div className="product">
-            <Navigation />
             {booksArray.map((section, sectionIndex) => (
                 <div className="section" key={sectionIndex}>
                     <h2>{section.category}</h2>
