@@ -17,15 +17,11 @@
 
 
 .product .section .books{
-    /* display: grid; */
-    /* grid-template-columns: repeat(20vw, 1fr);
-    gap: 5vw; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5vw;
     padding: 5%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.product .section h2{
-    align-self: center;
-}

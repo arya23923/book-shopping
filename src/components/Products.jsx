@@ -1,5 +1,6 @@
 import React from "react";
 import './Products.css'
+import Navigation from "./Navigation";
 
 // classics
 import ataleoftwocities from './images/books/ataleoftwocities.jpg'
@@ -153,6 +154,7 @@ const Product = () => {
     ]
     return(
         <div className="product">
+            <Navigation />
             {booksArray.map((section, sectionIndex) => (
                 <div className="section" key={sectionIndex}>
                     <h2>{section.category}</h2>
@@ -160,7 +162,7 @@ const Product = () => {
                         {section.books.map((book, bookIndex) => (
                             <div className="book" key={bookIndex}>
                                 <img src={book.image} alt={book.name}/>
-                                <p>{book.name}</p>
+                                <h3>{book.name}</h3>
                                 <p>{book.author}</p>
                                 <p>{book.cost}</p>
                                 <button>Add to cart</button>

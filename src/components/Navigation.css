@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-nav {
+.nav{
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -16,33 +16,50 @@ nav {
     font-style: normal;
 }
 
-nav img{
+.inverted{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    padding: 0% 5% 0% 5%;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav img, .inverted img{
     width: 8vw;
     height: auto;
     margin-top: 2vh;
 }
 
-nav span img{
+.nav span img, .inverted span img{
     width: 1vw;
     height: auto;
     margin-right: 0.5vw;
 }
 
-nav span{
+.nav span, .inverted span{
     margin-top: -2.5vh;
 }
 
-nav:hover{
+.nav:hover{
     color: black;
     background-color: white;
     transition-duration: 1000ms;
 }
 
-nav a:hover{
+.nav a:hover{
     cursor: pointer;
 }
 
-nav a:after{
+.nav a:after{
     content: '';
     width: 0px;
     height: 1px;
@@ -51,21 +68,23 @@ nav a:after{
     transition: 300ms;
 }
 
-nav a:hover:after{
+.nav a:hover:after{
     width: 100%;
 }
 
+
+
 @media screen and (max-width: 450px){
-    nav{
+    .nav{
         font-size: 10px;
     }
-    nav span img{
+    .nav span img{
         width: 2vw;
     }
-    nav span{
+    .nav span{
         margin-top: -2vh;
     }
-    nav img{
+    .nav img{
         width: 15vw;
     }
 }

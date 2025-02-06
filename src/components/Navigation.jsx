@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Logo from './images/the lit nook logo.png'
 import './Navigation.css'
 import inverted from './images/lit nook logo inverted.png'
@@ -9,10 +9,25 @@ import search_invert from './images/search-inverted.png'
 const Navigation = () => {
     const [logo, setLogo] = useState(inverted)
     const [search, setSearch] = useState(search_invert)
+    const [color, setColor] =useState(true)
+
+    const changeNavigation = () => {
+        if (window.scrollY >= 200){
+            setColor(false)
+            setLogo(Logo)
+            setSearch(search_icon)
+        }
+        else{
+            setColor(true)
+            setLogo(inverted)
+            setSearch(search_invert)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavigation)
+
     return(
-        <nav
-            // onMouseEnter={() => (setLogo(Logo))}
-            // onMouseLeave={() => (setLogo(inverted))}
+        <div className={color? 'nav' : 'inverted'}
             onMouseEnter={() => {setLogo(Logo); setSearch(search_icon)}}
             onMouseLeave={() => {setLogo(inverted); setSearch(search_invert)}}
         >
@@ -26,7 +41,7 @@ const Navigation = () => {
             </span>
             <a>ACCOUNT</a>
             <a>CART ()</a>
-        </nav>
+        </div>
     )
 }
 

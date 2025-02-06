@@ -1,11 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import './Landing.css'
 
 const Landing = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const redirect = () => {
-        navigate("/product")
+        // navigate("/product")
+        window.scroll({
+            bottom: document.body.scrollHeight, // or document.scrollingElement || document.body
+            left: 0,
+            behavior: 'smooth'
+          });
     }
     return(
         <main>

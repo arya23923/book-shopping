@@ -8,7 +8,7 @@ const Homepage = () => {
         <>
             <Navigation />
             <Landing />
-            {/* <Product /> */}
+            <Product />
         </>
     )
 }
