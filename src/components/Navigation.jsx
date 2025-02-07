@@ -5,11 +5,14 @@ import './Navigation.css'
 import inverted from './images/lit nook logo inverted.png'
 import search_icon from './images/search.png'
 import search_invert from './images/search-inverted.png'
+import { useSelector } from "react-redux";
 
 const Navigation = () => {
     const [logo, setLogo] = useState(inverted)
     const [search, setSearch] = useState(search_invert)
     const [color, setColor] =useState(true)
+
+    const cart = useSelector((state) => state.cart);
 
     const changeNavigation = () => {
         if (window.scrollY >= 200){
@@ -36,16 +39,16 @@ const Navigation = () => {
                 setLogo(inverted); setSearch(search_invert)
             }else{setLogo(Logo); setSearch(search_icon)}}}
         >
-            <Link to = '#'>SHOP</Link>
-            <Link to = '#'>ABOUT</Link>
-            <Link to = '#'>CONTACT</Link>
-            <Link to='/'><img src={logo} alt="logo"/></Link>
+            <a>SHOP</a>
+            <a>ABOUT</a>
+            <a>CONTACT</a>
+            <a><img src={logo} alt="logo"/></a>
             <span>
                 <img src={search} alt="search"/>
                 <a>SEARCH</a>
             </span>
             <a>ACCOUNT</a>
-            <a>CART ()</a>
+            <Link to='/cart'>CART ({cart.numOfItems})</Link>
         </div>
     )
 }

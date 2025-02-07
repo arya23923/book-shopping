@@ -1,8 +1,7 @@
-import React, { useRef} from "react";
+import React from "react";
 import './Landing.css'
 
 const Landing = () => {
-    const productRef = useRef();
     const redirect = () => {
         window.scroll({
             top: 600,
