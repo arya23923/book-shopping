@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import libimage from './images/library-21.jpg'
+import './CartItem.css'
 
 const CartItem = () => {
     return(
