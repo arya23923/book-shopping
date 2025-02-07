@@ -42,7 +42,7 @@ const Navigation = () => {
             <a>SHOP</a>
             <a>ABOUT</a>
             <a>CONTACT</a>
-            <a><img src={logo} alt="logo"/></a>
+            <Link to='/'><img src={logo} alt="logo"/></Link>
             <span>
                 <img src={search} alt="search"/>
                 <a>SEARCH</a>

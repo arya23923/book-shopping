@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
 .cart-items > img{
     width: 100vw;
     height: auto;
 }
+
+.cart-items > h1{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    padding: 3% 0% 3% 0%;
+}
+
+.cart-items .left .book-cart img{
+    width: 8vw;
+    height: auto;
+}
+
+.cart-items p{
+    color: black
+}
+
+.cart-items .left .book-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5%;
+    width: 60vw;
+    background-color: antiquewhite;
+}
+
+.cart-items .left .book-cart .right-book .increment-decrement{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
