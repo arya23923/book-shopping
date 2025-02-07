@@ -4,7 +4,7 @@ export const CartSlice = createSlice({
     name : 'cart',
     initialState : {
         items : [],
-        noOfItems : 0,
+        numOfItems : 0,
     },
     reducers : {
         addItem: (state, action) => {
@@ -22,7 +22,7 @@ export const CartSlice = createSlice({
 
         removeItem: (state, action) => {
             const { name, quantity } = action.payload;
-            state.item = state.items.filter((item) => item.name !== name)
+            state.items = state.items.filter((item) => item.name !== name)
             state.numOfItems -= quantity;
 
             if (state.numOfItems < 0) {

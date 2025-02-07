@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './Products.css'
 import { useSelector, useDispatch } from 'react-redux';
 import { addItem } from './CartSlice';
@@ -168,6 +168,7 @@ const Product = () => {
             }
         ));
     }
+    console.log(cart)
 
     return(
         <div className="product">
@@ -181,7 +182,10 @@ const Product = () => {
                                 <h3>{book.name}</h3>
                                 <p>{book.author}</p>
                                 <p>{book.cost}</p>
-                                <button onClick={handleAddtoCart}>Add to cart</button>
+                                {cart.items.find(item => item.name === book.name) ? (
+                                    <button className="product-button-added-to-cart">Added to cart</button> ) :
+                                    ( <button className="product-button"  onClick={() => handleAddtoCart(book)}>Add to cart</button>
+                                )}
                             </div>
                         ))}
                     </div>
