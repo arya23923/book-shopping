@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .cart-items > img{
     width: 100vw;
@@ -32,7 +33,7 @@
 }
 
 .cart-items .left .book-cart .right-book .increment-decrement button{
-    padding: 3%;
+    padding: 3% !important;
 }
 
 .cart-items .left .book-cart img{
@@ -46,7 +47,7 @@
 }
 
 .cart-items .left .book-cart .right-book .remove{
-    padding: 4% 7% 4% 7%;
+    padding: 4% 7% 4% 7% !important;
     background-color: rgb(107, 0, 0);
     color: white;
     border: 1px solid rgb(107, 0, 0);
@@ -100,15 +101,19 @@
     font-size: 30px;
     padding: 5%;
     margin-left: -5vw;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .cart-items .right button{
-    padding: 3% 4% 3% 4%;
+    padding: 3% 5% 3% 5%;
     border: 1px solid wheat;
     border-radius: 6px;
     color: black;
     background-color: wheat;
-} 
+}
 
 .cart-items .right .end-buttons{
     display: flex;
@@ -116,6 +121,34 @@
     justify-content: space-around;
     width: 20vw;
     margin-bottom: 5vh;
+}
+
+@media screen and (max-width : 450px){
+    .cart-items .left .book-cart .right-book p:nth-child(1){
+        font-size: 20px;
+    }
+    .cart-items .left .book-cart .left-book img{
+        width: 20vw;
+        height: auto;
+    }
+    .cart-items .left .book-cart .subtotal{
+        font-size: 20px;
+        padding: 3%;
+    }
+    .cart-items .left .book-cart{
+        width: 90vw;
+        margin-left: -12vw;
+    }
+    .cart-items .right p{
+        padding-left: 0;
+        margin-left: -20vw;
+        width: 90vw;
+        font-size: 20px;
+    }
+    .cart-items .right .end-buttons{
+        width: 50vw;
+        margin-left: -15vw;
+    }
 }
 
 

@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import libimage from './images/library-21.jpg'
 import './CartItem.css'
 import { useSelector, useDispatch } from "react-redux";
-
+import { Link } from "react-router-dom";
 import { removeItem, updateQuantity } from "./CartSlice";
 
 const CartItem = () => {
@@ -84,7 +84,7 @@ const CartItem = () => {
                 <p>Total Cart Amount: ${calculateTotalAmount()}</p>
                 <div className="end-buttons">
                     <button onClick={() => alert("Site still in progress")}>Checkout</button>
-                    <button>Continue Shopping</button>
+                    <Link to = '/'><button>Continue Shopping</button></Link>
                 </div>
             </div>
         </div>
