@@ -1,5 +1,5 @@
 import './App.css';
-import Landing from './components/Landing'
+import Landing from './components/LandingPage'
 import Homepage from './components/Homepage';
 import Product from './components/Products';
 import CartItem from './components/CartItem'
