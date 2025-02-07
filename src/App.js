@@ -3,6 +3,7 @@ import Landing from './components/Landing'
 import Homepage from './components/Homepage';
 import Product from './components/Products';
 import CartItem from './components/CartItem'
+import UnderConstruction from './components/UnderConstruction';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path='/landing' element={<Landing />} />
         <Route path='/product' element={<Product />} />
         <Route path='/cart' element={<CartItem />} />
+        <Route path='/construction' element={<UnderConstruction />} />
       </Routes>
     </BrowserRouter>
   );

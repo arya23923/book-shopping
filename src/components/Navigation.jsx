@@ -39,15 +39,15 @@ const Navigation = () => {
                 setLogo(inverted); setSearch(search_invert)
             }else{setLogo(Logo); setSearch(search_icon)}}}
         >
-            <a>SHOP</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
+            <Link to ='/construction'>SHOP</Link>
+            <Link to ='/construction'>ABOUT</Link>
+            <Link to ='/construction'>CONTACT</Link>
             <Link to='/'><img src={logo} alt="logo"/></Link>
             <span>
                 <img src={search} alt="search"/>
-                <a>SEARCH</a>
+                <Link to ='/construction'>SEARCH</Link>
             </span>
-            <a>ACCOUNT</a>
+            <Link to ='/construction'>ACCOUNT</Link>
             <Link to='/cart'>CART ({cart.numOfItems})</Link>
         </div>
     )

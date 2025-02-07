@@ -1,0 +1,30 @@
+.construction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 15%;
+}
+
+.construction img{
+    width: 10vw;
+    height: auto;
+    padding-bottom: 1%;
+}
+
+.construction button{
+    padding: 3%;
+}
+
+.construction h3{
+    padding: 2%;
+}
+
+@media screen and (max-width: 450px){
+    .construction img{
+        width: 20vw;
+        height: auto;
+        padding-top: 30%;
+    }
+}
