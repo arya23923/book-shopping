@@ -55,6 +55,7 @@ const CartItem = () => {
 
 
     return(
+        
         <div className="cart-items">
             <Navigation />
             <img src={libimage} />
@@ -75,12 +76,16 @@ const CartItem = () => {
                             </div>
                             <button className="remove" onClick={() => RemoveItem(item)}>Remove</button>
                         </div>
-                        <p>Subtotal : {Subtotal(item)}</p>
+                        <p className="subtotal">Subtotal : ${Subtotal(item)}</p>
                     </div>
                 ))}
             </div>
             <div className="right">
                 <p>Total Cart Amount: ${calculateTotalAmount()}</p>
+                <div className="end-buttons">
+                    <button onClick={() => alert("Site still in progress")}>Checkout</button>
+                    <button>Continue Shopping</button>
+                </div>
             </div>
         </div>
     )
