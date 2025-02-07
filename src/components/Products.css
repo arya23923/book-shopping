@@ -81,3 +81,16 @@
     background-color: gray;
     border: 1px solid gray;
 }
+
+@media screen and (max-width: 450px){
+    .product .section .books{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product .section .books .book h3{
+        font-size: 18px;
+    }
+    .product .section .books .book p{
+        font-size: 15px;
+        text-align: center;
+    }
+}
