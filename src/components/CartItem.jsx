@@ -10,6 +10,10 @@ const CartItem = () => {
     const cart = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
+    const parseItemCostToInteger = (itemCost) => {
+        return parseInt(itemCost.replace('$', ''), 10);
+    };
+
     const IncreaseQuantity = (item) => {
         const updated = {...item};
         updated.quantity++;
@@ -37,6 +41,19 @@ const CartItem = () => {
         }
         return 0;
     }
+
+    const calculateTotalAmount = () => {
+        let totalCost = 0;
+
+        cart.items.forEach((item) => {
+            const itemCost = parseItemCostToInteger(item.cost);
+            totalCost += itemCost * item.quantity;
+        });
+
+        return totalCost;
+    };
+
+
     return(
         <div className="cart-items">
             <Navigation />
@@ -61,6 +78,9 @@ const CartItem = () => {
                         <p>Subtotal : {Subtotal(item)}</p>
                     </div>
                 ))}
+            </div>
+            <div className="right">
+                <p>Total Cart Amount: ${calculateTotalAmount()}</p>
             </div>
         </div>
     )
