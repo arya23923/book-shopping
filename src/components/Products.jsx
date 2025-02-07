@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './Products.css'
+import { useSelector, useDispatch } from 'react-redux';
+import { addItem } from './CartSlice';
 
 // classics
 import ataleoftwocities from './images/books/ataleoftwocities.jpg'
@@ -26,6 +28,11 @@ import dune from './images/books/dune.jpg'
 import bookthief from './images/books/bookthief.jpg'
 
 const Product = () => {
+
+    const cart = useSelector((state) => state.cart);
+    const dispatch = useDispatch();
+    const [addedToCart, setAddedToCart] = useState({});
+
     const booksArray = [
         {
             category: "Classics",
@@ -151,6 +158,17 @@ const Product = () => {
             ]
         }
     ]
+
+    const handleAddtoCart = (book) =>{
+        dispatch(addItem(book))
+        setAddedToCart((prevState) => (
+            {
+                ...prevState,
+                [book.name]: true,
+            }
+        ));
+    }
+
     return(
         <div className="product">
             {booksArray.map((section, sectionIndex) => (
@@ -163,7 +181,7 @@ const Product = () => {
                                 <h3>{book.name}</h3>
                                 <p>{book.author}</p>
                                 <p>{book.cost}</p>
-                                <button>Add to cart</button>
+                                <button onClick={handleAddtoCart}>Add to cart</button>
                             </div>
                         ))}
                     </div>

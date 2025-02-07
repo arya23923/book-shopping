@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const CartSlice = createSlice({
-    name : cart,
+    name : 'cart',
     initialState : {
         items : [],
         noOfItems : 0,
@@ -9,7 +9,7 @@ export const CartSlice = createSlice({
     reducers : {
         addItem: (state, action) => {
             const {name, image, cost} = action.payload;
-            const existingItem = state.items.find(item.name === name)
+            const existingItem = state.items.find(item => item.name === name)
 
             if (existingItem){
                 existingItem.quantity++
@@ -31,7 +31,7 @@ export const CartSlice = createSlice({
         },
         updateQuantity: (state, action) => {
                 const {name, quantity} = action.payload;
-                const existingItem = state.items.find(item.name === name);
+                const existingItem = state.items.find(item => item.name === name);
 
                 if(existingItem){
                     const differenceQuantity = quantity - existingItem.quantity;
